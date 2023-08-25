@@ -1,15 +1,17 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
-import MeuComponente from "./components/MeuComponente";
+import { ScrollView, StyleSheet } from "react-native";
+import Pagina3 from "./screens/Pagina3";
+import NumeroAleatorio from "./components/NumeroAleatorio";
 import MinMax from "./components/MinMax";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <MeuComponente />
-      <MinMax min={10} max={20} />
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <ScrollView style={{ margin: 10 }}>
+        <Pagina3 />
+        <NumeroAleatorio min={1} max={35} />
+        <MinMax min={20} max={30}/>
+      </ScrollView>
+    </>
   );
 }
 
