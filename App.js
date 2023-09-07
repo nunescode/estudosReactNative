@@ -6,6 +6,7 @@ import Botao from "./components/Botao";
 import Contador from "./components/Contador";
 import Nome from "./components/Nome";
 import Biscoito from "./components/Biscoito";
+import Perfil from "./components/Perfil";
 
 export default function App() {
   return (
@@ -19,7 +20,11 @@ export default function App() {
         {/*<Nome />*/}
 
         {/* ATIVIDADE BISCOITO DA SORTE 04/09/2023 */}
+        {/**
+         * 
         <Biscoito/>
+         */}
+         <Perfil></Perfil>
         
       </ScrollView>
     </>
