@@ -7,11 +7,12 @@ import Contador from "./components/Contador";
 import Nome from "./components/Nome";
 import Biscoito from "./components/Biscoito";
 import Perfil from "./components/Perfil";
+import Cronometro from "./components/Cronometro";
 
 export default function App() {
   return (
     <>
-      <ScrollView style={{ margin: 10 }}>
+      <ScrollView style={styles.container}> 
         {/*<Pagina3 /> */}
         {/*<NumeroAleatorio min={1} max={35} />*/}
         {/*<MinMax min={20} max={30}/>*/}
@@ -23,8 +24,9 @@ export default function App() {
         {/**
          * 
         <Biscoito/>
-         */}
          <Perfil></Perfil>
+         */}
+         <Cronometro></Cronometro>
         
       </ScrollView>
     </>
@@ -34,8 +36,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#808080",
   },
 });
